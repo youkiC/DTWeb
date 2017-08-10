@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置bean
+    class: bean 的全类名,通过反射的方式在IOS容器中创建Bean.所以要求Bean中必去有无参的构造器
+    id:容器识别器 id唯一
+    -->
+    <bean id="helloWorld2" class="hello.HelloWorld" >
+        <property name="username" value="String"/>
+    </bean>
+</beans >
